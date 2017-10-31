@@ -17,8 +17,8 @@ city = parsed_json['location']['city']
 state = parsed_json['location']['state']
 weather = parsed_json['current_observation']['weather']
 temperature_string = parsed_json['current_observation']['temperature_string']
-feelslike_string = parsed_json['current_observation']['feelslike_string']
-my_weather = (str(reg_format_time) + ' Weather in ' + city + ', ' + state + ': ' + weather.lower() + '. The temperature is ' + temperature_string + ' but it feels like ' + feelslike_string + '.')
+#feelslike_string = parsed_json['current_observation']['feelslike_string']
+my_weather = (str(reg_format_time) + ' Weather in ' + city + ', ' + state + ': ' + weather.lower() + '. The temperature is ' + temperature_string + '.')
 f.close()
 
 client = Client(account_sid, auth_token)
